@@ -1,0 +1,84 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 15px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.chart-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* BarChart.css */
+.chart-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  font-size: 18px;
+  color: #8c8c8c;
+}
+
+.loading-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.chart-container .bizcharts-interval {
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 100%;
+  }
+}
